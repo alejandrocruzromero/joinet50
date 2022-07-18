@@ -1,0 +1,47 @@
+.Item {
+    height: 350px;
+    width: 200px;
+    background-color: white;
+    border-color: rgb(231, 205, 205);
+    margin: 20px;
+    border: 1px;
+    border-radius: 10%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: ridge
+}
+
+.ItemContenidoImagen {
+    inline-size: -webkit-fill-available;
+}
+
+.ItemP {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ItemTitulo {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+}
+
+.contenedorItem {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.contenedorImagen {
+    height: 400px;
+    width: 400px;
+    contain: content;
+}
+
+.contendedorTexto {
+    height: 400px;
+    width: 400px;
+}
