@@ -119,7 +119,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
         cart.forEach(element=>{
              total = total + "Articulo : " + (element.item)  + " : " + (element.quantiy) +"x $" + (element.price)  +" = $" + element.quantiy * element.price
             // total =  total + 
-            // [                
+            // [                f
             //     {
             //         item:element.item,
             //         quantiy: element.quantiy,

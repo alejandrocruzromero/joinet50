@@ -11,7 +11,7 @@ function Cart({props}){
      const { cart } = useContext(CartContext)      ;
     const { MuestraItems } = useContext(CartContext)      ;    
     const { getTotal } = useContext(CartContext)      ;
-    const { removeFromCart } = useContext(CartContext)      ;
+    
     const { clearCart } = useContext(CartContext)      ;
     
 
@@ -26,12 +26,7 @@ const onDelAll=(count) =>{
     console.log("BORRO= TOTO")        
 }
 
-    const onDel =(count) =>{
-        //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
-       
-        removeFromCart(props.id);
-        console.log("BORRO=", props.id)        
-    }
+   
     // const noFunciona = carritoActual()
     //NO FUNCIONA
     // console.log("NO FUNCIONA:"+carritoActual())
@@ -60,11 +55,11 @@ const onDelAll=(count) =>{
 
     return(
         <>
-        <div>            
-            <p>Carrito de compra</p>            
-            
+        
+            <h2>Carrito de compra</h2>            
+            <div className = "carrito" >                
                
-            
+    {/* funciona ok        
        {cart.map( (emp,index)=>
        (
           <div key={index}>
@@ -82,8 +77,27 @@ const onDelAll=(count) =>{
 
             </p>
              <button   onClick = {onDelAll}  >Limpiar Carrito</button> 
-        </div>
+             funciona ok    */}
+
+      {cart.map( (emp,index)=>
+       (
+        <CartItem           
+              item = {emp.item}
+              price = {emp.price}
+              quantiy =  {emp.quantiy}                        
+          />
+       )
+       )}
+ </div>
+ <div>
+        <p>Importe Total: $ 
+            {getTotal()}
+        </p>
         
+             <button   onClick = {onDelAll}  >Limpiar Carrito</button>
+
+        </div>
+     
         </>
     )
 }
