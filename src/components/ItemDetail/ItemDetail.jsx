@@ -25,11 +25,11 @@ function ItemDetail(props){
             </div>
             <div className = "contendedorTexto">
                 <h1 className = "ItemTituloDetalle">{props.nombre}</h1>
-                <h2 className = "ItemPrecio">${props.price}</h2>
-                <p className = "ItemSku">SKU: {props.sku}</p>
-                <p className = "ItemPCategoria">categoria: {props.category}</p>
+                <h2 className = "ItemPrecio">${props.precio}</h2>
+                <p className = "ItemSku">SKU: {props.item}</p>
+                {/* <p className = "ItemPCategoria">categoria: {props.category}</p> */}
                 <hr/>                
-                <ItemCount cantidad = {props.stock} id = {props.id} price ={props.price}/>                
+                <ItemCount cantidad = {props.existencia} id = {props.item} price ={props.precio} nombre = {props.nombre}/>                
                 {/* <p>{props.id}</p>    */}
                 {/* <Link to = {`/productos/${props.id}`} > <h4>Ver Detalles del producto</h4></Link>  */}
                 {/* <Link to = {`/productos/${props.id}`} > <p className="verDetalle">ver detalle</p></Link> */}

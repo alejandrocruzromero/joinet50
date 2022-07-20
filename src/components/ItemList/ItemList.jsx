@@ -13,11 +13,12 @@ function ItemList(props){
         {props.Items.map((i)=>(                  
 
             <Item 
-                name ={i.name}
-                id={i.id}
-                key={i.id}
-                price={i.price}
-                stock={i.stock_quantity}
+                name ={i.nombre}
+                id={i.item}
+                key={i.item}
+                price={i.precio}
+                stock={i.existencia}
+                imagen={i.imagen}
                 // imagen={i.images[0].src}
                 />
 

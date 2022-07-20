@@ -43,7 +43,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
     }
 
     
-    const addToCart =(item,quantiy,price) => {
+    const addToCart =(item,quantiy,price,nombre) => {
         // console.log
         console.log("item =", item)
         console.log("quantity =", quantiy)
@@ -62,6 +62,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
                 ...cart,
                 {
                     item:item,
+                    nombre:nombre,
                     quantiy: quantiy,
                     price: price
                 }

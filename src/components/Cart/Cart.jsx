@@ -83,6 +83,7 @@ const onDelAll=(count) =>{
        (
         <CartItem           
               item = {emp.item}
+              nombre = {emp.nombre}
               price = {emp.price}
               quantiy =  {emp.quantiy}                        
           />

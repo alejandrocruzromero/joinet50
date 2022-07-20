@@ -10,10 +10,11 @@ function Contador(props){
     const onAdd =(count) =>{
         //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
         setPurchaseCompleted(true);
-        addToCart(props.id,num,props.price);
+        addToCart(props.id,num,props.price,props.nombre);
         console.log("IDARTICULO=", props.id)
         console.log("cantidaARTICULO=", num)
         console.log("PRECIOARTICULO=", props.price)
+        console.log("NOMBRE=", props.nombre)
     }
 
     let disabled = ""

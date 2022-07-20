@@ -8,9 +8,9 @@ function CategoryDetail(props){
         <div className ='itemlist'>                
         {props.Items.map((i)=>(                  
             <Category 
-                name ={i.name}
-                id={i.id}
-                key={i.id}
+                categoria ={i.categoria}
+                nombre={i.nombre}
+                key={i.categoria}
                 />
         ))}
         </div>

@@ -13,7 +13,7 @@ function CartItem(props){
     //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
    
     removeFromCart(props.item);
-    console.log("BORRO=", item )       
+    console.log("BORRO=", props.item )       
     }
 
 
@@ -21,7 +21,7 @@ function CartItem(props){
     return(
     <section   className="Item">                    
          
-        <h5 className = "ItemTitulo">{props.item}</h5>
+        <h5 className = "ItemTitulo"> {props.nombre}</h5>
         <p className = "ItemP">${props.price}</p>
         <p className = "ItemP">cantidad: {props.quantiy}</p>
         <p className = "ItemP">Total: ${props.price * props.quantiy}</p>
