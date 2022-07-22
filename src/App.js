@@ -8,6 +8,7 @@ import ComputoItemListContainer from './components/ComputoItemListContainer/Comp
 import ElectronicaItemListContainer from './components/ElectronicaItemListContainer/ElectronicaItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import CategoryDetailContainer from './components/CategoryDetailContainer/CategoryDetailContainer'
+import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra'
 import Cart from './components/Cart/Cart'
 
 
@@ -45,6 +46,7 @@ function App() {
         {/* <Route exact path="/productos/:id" element={<ItemDetailContainer onAddCarrito={addCarritoHandler}/>}></Route>                */}
         <Route exact path="/productos/:id" element={<ItemDetailContainer onAddCarrito={addCarritoHandler}/>}></Route>
         <Route exact path="/cart"           element={<Cart />}></Route>     
+        <Route exact path="/finalizar"       element={<FinalizarCompra />}></Route>        
         {/* <Route exact path="/cart"           element={<Cart />}></Route>      */}
       </Routes>
     </div>

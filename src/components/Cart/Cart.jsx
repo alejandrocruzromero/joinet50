@@ -6,6 +6,7 @@ import { CartContext } from '../Context/CartContext'
 import { useContext } from 'react';
 import './Cart.css'
 import { useState,useEffect } from 'react';
+import {NavLink} from 'react-router-dom'
 function Cart({props}){
     // const { carritoActual } = useContext(CartContext)      ;
      const { cart } = useContext(CartContext)      ;
@@ -18,6 +19,8 @@ function Cart({props}){
     const [emp,setcart]=useState(cart)
 
     const arregloCarrito = MuestraItems();
+
+    const total = getTotal()
 
 const onDelAll=(count) =>{
     //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
@@ -95,7 +98,17 @@ const onDelAll=(count) =>{
             {getTotal()}
         </p>
         
+        <p>
              <button   onClick = {onDelAll}  >Limpiar Carrito</button>
+             </p>
+            <p>
+            { total == 0   ? ( 
+                <p></p>
+            ) : (
+                <NavLink activeClassName = 'active' to = '/finalizar'>Finalizar Compra!</NavLink>  
+            )
+             }
+             </p>
 
         </div>
      
