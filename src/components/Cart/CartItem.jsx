@@ -19,15 +19,25 @@ function CartItem(props){
 
     console.log ("Rntro?" + props.item)
     return(
-    <section   className="Item">                    
-         
-        <h5 className = "ItemTitulo"> {props.nombre}</h5>
-        <p className = "ItemP">${props.price}</p>
-        <p className = "ItemP">cantidad: {props.quantiy}</p>
-        <p className = "ItemP">Total: ${props.price * props.quantiy}</p>
-        <button   onClick = {onDel}  >Borrar</button> 
-    </section>
 
+
+<>
+       
+        
+    {/* <section   className="Item">                     */}
+         
+        <tr><td> {props.item}</td>
+            <td> {props.nombre}</td>
+            <td>${props.price}</td>
+            <td> {props.quantiy}</td>
+            <td>${props.price * props.quantiy}</td>
+            <td><button  className='btn' onClick = {onDel}  >X</button> </td>
+        </tr>
+
+
+        
+    {/* </section> */}
+    </>
     );
 
 }

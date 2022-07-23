@@ -59,18 +59,24 @@ function Contador(props){
     return(
         <>
         <p className="verDetalle">
-            <button onClick = {restar}>-</button>
+            <button className="btnBTNdte" onClick = {restar}>-</button>
             &nbsp;&nbsp;{num}&nbsp;&nbsp;
-            <button onClick = {sumar}>+</button>
-            <button onClick = {reset}>limpiar</button>        
+            <button className="btnBTNdte" onClick = {sumar}>+</button>
+            <button className="btnBTNdte" onClick = {reset}>limpiar</button>        
         </p>
         <p p className="verDetalle">
             
             {
                     purchaseCompleted ? (
-                        <Link to = '/cart' > <p className="verDetalle">Ir a Carrito</p></Link> 
+                        
+                        <Link to = '/cart' > 
+                            <div className="btnContainer"> 
+                                <p className="verDetalle btn">Ir a Carrito
+                                </p>
+                            </div>
+                        </Link> 
                     ) : (
-                        <button   onClick = {onAdd} disabled={!disabled} >Agregar al Carrito</button> 
+                        <button  className="btnBTN" onClick = {onAdd} disabled={!disabled} >Agregar al Carrito</button> 
                     )
                 }
             {/* <button   onClick = {onAdd}  disabled={!disabled}>Agregar al Carrito</button>  */}

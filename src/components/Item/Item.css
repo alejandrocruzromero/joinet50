@@ -12,6 +12,20 @@
     border: ridge
 }
 
+.btn {
+    padding: 10px 15px;
+    background: #99040b;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    color: #e8efff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-color: #99040b
+}
+
 .ItemContenido {
     width: 80px;
     margin-top: 5px;

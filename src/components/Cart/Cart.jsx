@@ -81,7 +81,15 @@ const onDelAll=(count) =>{
             </p>
              <button   onClick = {onDelAll}  >Limpiar Carrito</button> 
              funciona ok    */}
-
+    <table className="tabla">
+        <tr className ="borderTr">
+            <th>Item</th>
+            <th>Descripcion</th>        
+            <th>Precio</th>
+            <th>Cantidad</th>        
+            <th>Total</th>
+            <th>Borrar</th>
+        </tr>
       {cart.map( (emp,index)=>
        (
         <CartItem           
@@ -92,20 +100,21 @@ const onDelAll=(count) =>{
           />
        )
        )}
+    </table>
  </div>
  <div>
-        <p>Importe Total: $ 
+        <p className="total">Importe Total: $ 
             {getTotal()}
         </p>
         
         <p>
-             <button   onClick = {onDelAll}  >Limpiar Carrito</button>
+             <button  className="btnBTN" onClick = {onDelAll}  >Limpiar Carrito</button>
              </p>
             <p>
             { total == 0   ? ( 
                 <p></p>
             ) : (
-                <NavLink activeClassName = 'active' to = '/finalizar'>Finalizar Compra!</NavLink>  
+                <NavLink activeClassName = 'active' to = '/finalizar'><div className="btnContainer"> <p className="btn">Finalizar Compra!</p></div></NavLink>  
             )
              }
              </p>

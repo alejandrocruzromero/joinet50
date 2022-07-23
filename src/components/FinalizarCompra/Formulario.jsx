@@ -23,7 +23,7 @@ function Formulario() {
   //   )
   // )
 //carrito  
-
+  const { clearCart } = useContext(CartContext)      ;
   const [name, setName] = useState("");
   const [tel, settel] = useState("");
   const [mail, setmail] = useState("");  
@@ -79,7 +79,8 @@ function Formulario() {
                     
 
                     
-                  
+                      clearCart();
+                   
                     ReactDOM.render(<p>{name} <br/>Gracias por su compra <br/>Su orden Es : <b>{orden}</b></p> , document.getElementById('sandy'))
                     // <NavLink activeClassName = 'active' to = '/'> </NavLink>
 
@@ -127,28 +128,29 @@ function Formulario() {
     return (
       <>
       <div className="actualizate" id = "sandy">
-        <form onSubmit={handleSubmit}>
+        <h3>Por favor ingrese sus datos para contactarlo:</h3>
+        <form className="forma" onSubmit={handleSubmit}>
           <div >
-            <input
+            <input className="input"             
               name='Nombre'
               placeholder='Nombre'
               value ={name}
               onChange={(event) => setName(event.target.value)}
             /><br/>
-            <input
+            <input  className="input" 
               name='Telefono'
               placeholder='Telefono'
               value = {tel}
               onChange={(event) => settel(event.target.value)}
             /><br/>
-            <input
+            <input  className="input" 
               name='Correo'
               placeholder='Correo'
               value= {mail}
               onChange={(event) => setmail(event.target.value)}
             /><br/>
           </div>
-          <button  type = "submit" >Finalizar Compra</button>
+          <button className="btnBTN" type = "submit" >Finalizar Compra</button>
         </form>
 
       </div>

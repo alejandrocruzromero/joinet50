@@ -29,7 +29,7 @@ function Item(props){
         {/* <p className = "ItemP">Existencia {props.stock}</p> */}
         {/* <p>{props.id}</p>    */}
         {/* <Link to = {`/productos/${props.id}`} > <h4>Ver Detalles del producto</h4></Link>  */}
-        <Link to = {`/productos/${props.id}`} > <p className="verDetalle">ver detalle</p></Link>
+        <Link to = {`/productos/${props.id}`} > <div className="btnContainer"><p className="verDetalle btn">ver detalle</p></div></Link>
     </section>
 
     );

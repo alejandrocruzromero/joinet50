@@ -45,6 +45,7 @@ function CategoryDetailContainer(){
 
     return(
         <div>            
+            <div> <h1>Categorias </h1></div>
             <CategoryDetail  Items = {ItemFetch}                           
             />
         </div>

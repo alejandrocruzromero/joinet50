@@ -1,0 +1,17 @@
+.btnBTN {
+    background-color: #99040b;
+    color: white;
+    border-width: thin;
+    padding: 8px;
+    margin: 20px;
+}
+
+.input {
+    /* background-color: #99040b; */
+    font-size: larger;
+    margin: 5px;
+}
+
+.forma {
+    padding: 20px
+}
