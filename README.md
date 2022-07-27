@@ -21,4 +21,4 @@ In the project directory, you can run:
 
 ### gif
 
-![](https://im.ezgif.com/tmp/ezgif-1-fd1bf5704c.gif)
+![](https://joinet.com/assets/images/ezgif-1-fd1bf5704c.gif)
