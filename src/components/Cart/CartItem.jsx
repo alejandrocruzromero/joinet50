@@ -13,11 +13,11 @@ function CartItem(props){
     //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
    
     removeFromCart(props.item);
-    console.log("BORRO=", props.item )       
+    // console.log("BORRO=", props.item )       
     }
 
 
-    console.log ("Rntro?" + props.item)
+    // console.log ("Rntro?" + props.item)
     return(
 
 

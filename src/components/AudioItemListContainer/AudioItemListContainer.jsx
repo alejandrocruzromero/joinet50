@@ -17,7 +17,7 @@ useEffect( () => {
   //Instalar firebase
   //Revisa index.js
   //COLOCAR HASTA ARRIBA : import { getFirestore,doc ,getDoc} from 'firebase/firestore';
-  console.log ("USEEFFECT")
+  // console.log ("USEEFFECT")
           //const db = getFirestore()
           //const moviesRef = collection(db,"Articulos")
 

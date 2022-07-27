@@ -3,7 +3,7 @@ import Category from '../Category/Category'
 function CategoryDetail(props){
     
 
-      console.log ("CATEGORYLIST",props)        
+    //   console.log ("CATEGORYLIST",props)        
     return(
         <div className ='itemlist'>                
         {props.Items.map((i)=>(                  

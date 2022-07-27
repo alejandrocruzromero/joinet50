@@ -4,7 +4,7 @@ function ItemList(props){
     
     
     
-      console.log ("ITEMLIST::::",props)
+    //   console.log ("ITEMLIST::::",props)
         
 
     return(

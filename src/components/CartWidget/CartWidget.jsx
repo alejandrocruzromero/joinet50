@@ -15,7 +15,7 @@ function CartWidget() {
   // console.log("CARRITO ICONO : - el carro tiene: ", getTotal())   
   
     const totalCarrito= getTotalPiezas();
-    console.log("Total Piezas: ", totalCarrito) 
+    // console.log("Total Piezas: ", totalCarrito) 
   return (
     <section className="CartWidget">
     

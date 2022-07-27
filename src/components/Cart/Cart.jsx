@@ -26,7 +26,7 @@ const onDelAll=(count) =>{
     //Recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
    
     clearCart();
-    console.log("BORRO= TOTO")        
+    // console.log("BORRO= TOTO")        
 }
 
    

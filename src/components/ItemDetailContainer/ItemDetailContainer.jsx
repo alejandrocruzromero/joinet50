@@ -36,15 +36,14 @@ useEffect( () => {
     //Instalar firebase
     //Revisa index.js
     //COLOCAR HASTA ARRIBA : import { getFirestore,doc ,getDoc} from 'firebase/firestore';
-    console.log ("USEEFFECT = "+params.id)
+    // console.log ("USEEFFECT = "+params.id)
             //const db = getFirestore()
             //const moviesRef = collection(db,"Articulos")
   
             const db = getFirestore()
             const q = query(collection(db,"Articulos"),where("item","==",parseInt(params.id)))
             getDocs(q).then((snapshot) => {                 
-                console.log("hola");
-                                   
+                // console.log("hola");
               setItemsFetch(snapshot.docs.map((doc)=>doc.data()))           
             })
     //TRAER DATOS DE FIREBASE        

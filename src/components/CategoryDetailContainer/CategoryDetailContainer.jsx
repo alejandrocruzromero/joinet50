@@ -6,7 +6,7 @@ import './CategoryDetailContainer.css'
 import { getFirestore,doc ,getDoc,collection,getDocs,query,where} from 'firebase/firestore';
 
 function CategoryDetailContainer(){
-    console.log("InicioBien")
+    // console.log("InicioBien")
     const [ItemFetch,setItemsFetch] = useState([])    
     // const FetchItems = () =>{
     //         console.log("vamosBien1")
@@ -30,7 +30,7 @@ function CategoryDetailContainer(){
         //Instalar firebase
         //Revisa index.js
         //COLOCAR HASTA ARRIBA : import { getFirestore,doc ,getDoc} from 'firebase/firestore';
-        console.log ("USEEFFECT")
+        // console.log ("USEEFFECT")
                 //const db = getFirestore()
                 //const moviesRef = collection(db,"Articulos")
       

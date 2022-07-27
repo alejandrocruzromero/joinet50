@@ -40,7 +40,7 @@ function ItemListContainer(props){
         //Instalar firebase
         //Revisa index.js
         //COLOCAR HASTA ARRIBA : import { getFirestore,doc ,getDoc} from 'firebase/firestore';
-        console.log ("USEEFFECT = "+params.id)
+        // console.log ("USEEFFECT = "+params.id)
                 //const db = getFirestore()
                 //const moviesRef = collection(db,"Articulos")
       
@@ -55,7 +55,7 @@ function ItemListContainer(props){
     return(
         <div>            
             
-     <div> <h1>Tienda en Linea </h1></div>
+     <div> <h1> Bienvenido a tienda en linea </h1></div>
             <ItemList Items = {ItemFetch} />
         </div>
 

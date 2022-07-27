@@ -43,7 +43,7 @@ function Formulario() {
 
   const handleSubmit  = (event) => {
     event.preventDefault()
-    console.log(name);
+    // console.log(name);
     
     const venta = {
           date : new Date().toLocaleString() + "",
@@ -60,7 +60,7 @@ function Formulario() {
 
     }
 
-    console.log("LA VNA S", venta)
+    // console.log("LA VNA S", venta)
     
     const db = getFirestore()
     const lvCollection = collection(db,"Orders")
@@ -72,10 +72,10 @@ function Formulario() {
                 .then(
                     ({ id }) => {
                     //  console.log("LV_ORDEN_CORRECTA2=>",id)
-                      console.log(".-(")
+                      // console.log(".-(")
                      orden = id
                     //console.log("ya se agarro?:" , orden)
-                    console.log ("orden:",orden)         
+                    // console.log ("orden:",orden)         
                     
 
                     
@@ -107,15 +107,15 @@ function Formulario() {
         lv_existenciaACtual =   doc.data(0).existencia
       })
 
-      console.log("Articulo es:", lv_documento)
-      console.log("Existencia actual es:", lv_existenciaACtual)
-      console.log("la cantidad vendida es", emp.quantiy)
+      // console.log("Articulo es:", lv_documento)
+      // console.log("Existencia actual es:", lv_existenciaACtual)
+      // console.log("la cantidad vendida es", emp.quantiy)
       //aqui hacemos el update XD
          let nuevoStock = doc(db,"Articulos",lv_documento)
          let lv_nuevostock = lv_existenciaACtual - emp.quantiy
          updateDoc(nuevoStock,{ existencia: lv_nuevostock})
 
-         console.log("Existencia despues de la venta es:", lv_nuevostock)
+        //  console.log("Existencia despues de la venta es:", lv_nuevostock)
          
      
     })

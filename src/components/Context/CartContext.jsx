@@ -45,9 +45,9 @@ export const CartProvider = ({defaultValue = [], children}) => {
     
     const addToCart =(item,quantiy,price,nombre) => {
         // console.log
-        console.log("item =", item)
-        console.log("quantity =", quantiy)
-        console.log("price =", price)
+        // console.log("item =", item)
+        // console.log("quantity =", quantiy)
+        // console.log("price =", price)
         if (isInCart(item)) {//Ya existe en el carrito, 
             const newCart = [...cart] //hacemos copia del carrito :-)
             for (const element of newCart) { //buscl e producto
@@ -70,7 +70,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
           
         )        
     }
-    console.log("el carro tiene: ", cart)   
+    // console.log("el carro tiene: ", cart)   
 }
 
 

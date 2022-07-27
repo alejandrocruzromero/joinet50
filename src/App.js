@@ -26,7 +26,7 @@ function App() {
   const addCarritoHandler = (newCarrito) =>{
     //para pasar al papa
     Carrito.push(newCarrito)
-    console.log("carrote:" + Carrito)
+    // console.log("carrote:" + Carrito)
   }
 
   return (
